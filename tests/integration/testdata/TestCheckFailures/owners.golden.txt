@@ -1,0 +1,6 @@
+==> Executing Valid Owner Checker (<duration>)
+    [err] line 10: User "@owner-a" does not have github account
+    [err] line 11: User "@octocat" is not a member of the organization
+    [err] line 17: Team "not-existing-team" does not exist in organization "gh-codeowners" or has no permissions associated with the repository.
+
+1 check(s) executed, 1 failure(s)
