@@ -87,16 +87,14 @@ func (s SeverityType) String() string {
 	}
 }
 
-// Unmarshal provides custom parsing of severity type.
-// Implements envconfig.Unmarshal interface.
-func (s *SeverityType) Unmarshal(in string) error {
-	switch strings.ToLower(in) {
+func (s *SeverityType) Set(value string) error {
+	switch strings.ToLower(value) {
 	case "error", "err":
 		*s = Error
 	case "warning", "warn":
 		*s = Warning
 	default:
-		return fmt.Errorf("not a valid severity type: %q", in)
+		return fmt.Errorf("not a valid severity type: %q", value)
 	}
 
 	return nil

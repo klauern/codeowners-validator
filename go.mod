@@ -12,6 +12,7 @@ require (
 	github.com/spf13/afero v1.2.2
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.5.1
+	github.com/urfave/cli/v2 v2.2.0 // indirect
 	github.com/vrischmann/envconfig v1.2.0
 	golang.org/x/net v0.0.0-20190320064053-1272bf9dcd53 // indirect
 	golang.org/x/oauth2 v0.0.0-20190319182350-c85d3e98c914
